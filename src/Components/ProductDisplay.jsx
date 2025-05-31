@@ -7,6 +7,8 @@ import { addToWishlist, removeFromWishlist } from "./WishlistSlice";
 function ProductDisplay() {
   const dispatch = useDispatch();
   const selectProduct = useSelector((state) => state.selected.select);
+  const wishlist = useSelector((state) => state.wishlist.items);
+
   const [heartedItems, setHeartedItems] = useState({});
 
   const products = selectProduct.product || [];
@@ -49,6 +51,7 @@ function ProductDisplay() {
                   onClick={(e) => {
                     e.stopPropagation();
                     toggleHeart(index);
+                    handleHeartClick(item);
                   }}
                 >
                   {heartedItems[index] ? "❤️" : "🤍"}

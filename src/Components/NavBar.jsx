@@ -71,7 +71,7 @@ function NavBar() {
           <div className="search">
             <select onChange={handleSelectChange}>
               <option value="" id="opt">
-                -- Select a Product -- 🔍{" "}
+                -- Select a Product --
               </option>
               {Object.values(products).map((product, index) => (
                 <option key={product.id} value={product.name}>
