@@ -8,13 +8,13 @@ import React from "react";
 import ProductDisplay from "./Components/ProductDisplay";
 import PriceDisplay from "./Components/PriceDisplay";
 
-import FirstFrame from "./Components/FirstFrame";
-import SecondFrame from "./Components/SecondFrame";
-import ThirdFrame from "./Components/ThirdFrame";
-import FourthFrame from "./Components/FourthFrame";
-import FifthFrame from "./Components/FifthFrame";
-import SixthFrame from "./Components/SixthFrame";
-import SeventhFrame from "./Components/SeventhFrame";
+// import FirstFrame from "./Components/FirstFrame";
+// import SecondFrame from "./Components/SecondFrame";
+// import ThirdFrame from "./Components/ThirdFrame";
+// import FourthFrame from "./Components/FourthFrame";
+// import FifthFrame from "./Components/FifthFrame";
+// import SixthFrame from "./Components/SixthFrame";
+// import SeventhFrame from "./Components/SeventhFrame";
 import FooterFrame from "./Components/FooterFrame";
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
       <HeaderCarousel />
       <ProductDisplay />
       <PriceDisplay />
-      <div className="first_flex">
+      {/* <div className="first_flex">
         <FirstFrame
           image={"/Images/projector.png"}
           title={"Projector"}
@@ -161,7 +161,7 @@ function App() {
           title={"Riding Glove"}
           cost={"From 999"}
         />
-      </div>
+      </div> */}
       <FooterFrame />
       {/* <ShirtsMan />
       <DressWomen />
