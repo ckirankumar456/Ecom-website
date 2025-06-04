@@ -1,0 +1,12 @@
+#myBox {
+  width: 90%;
+  height: 80vh;
+  border: 2px solid;
+}
+button {
+  font-size: 2rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  justify-content: center;
+  margin: 20px 0;
+}

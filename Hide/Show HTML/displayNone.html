@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="hide" style="margin-left: 100px">Hide</button><br /><br />
+    <img
+      id="myImage"
+      src="/animal10.jpg.jpeg"
+      alt=""
+      width="300px"
+      height="200px"
+    />
+    <script>
+      const buttonHide = document.getElementById("hide");
+      const myImage = document.getElementById("myImage");
+      // //   buttonHide.addEventListener("click", (event) => {
+      // //     myImage.style.display = "none";
+      // //   });
+
+      // buttonHide.addEventListener("click", (event) => {
+      //   if (myImage.style.display === "none") {
+      //     myImage.style.display = "block";
+      //     buttonHide.textContent = "Hide";
+      //   } else {
+      //     myImage.style.display = "none";
+      //     buttonHide.textContent = "show";
+      //   }
+      // });
+
+      buttonHide.addEventListener("click", (event) => {
+        if (myImage.style.visibility === "hidden") {
+          myImage.style.visibility = "visible";
+          buttonHide.textContent = "Hide";
+        } else {
+          myImage.style.visibility = "hidden";
+          buttonHide.textContent = "Show";
+        }
+      });
+    </script>
+  </body>
+</html>

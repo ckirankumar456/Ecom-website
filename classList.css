@@ -1,0 +1,20 @@
+.buttons {
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 20px;
+  display: flex;
+  border: none;
+  border-radius: 10px;
+}
+.enable {
+  background-color: blue;
+  color: white;
+}
+.hover {
+  box-shadow: 0 0 10px black;
+  font-weight: bold;
+}
+.disenable {
+  background-color: hsl(0, 0%, 60%);
+  color: hsl(0, 20%, 80%);
+}

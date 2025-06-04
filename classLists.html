@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #myButton {
+        font-size: 2em;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      .enabled {
+        background-color: blue;
+        color: white;
+      }
+      .hover {
+        box-shadow: 0 0 10px black;
+        font-weight: bold;
+      }
+      .disabled {
+        background-color: gray;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="myButton">my Button</button>
+    <script>
+      const myButton = document.getElementById("myButton");
+      myButton.classList.add("enabled");
+      //   myButton.classList.add("enabled");
+      //   myButton.classList.remove("enabled");
+
+      //   myButton.addEventListener("mouseover", (event) => {
+      //     event.target.classList.add("hover");
+      //   });
+
+      //   myButton.addEventListener("mouseout", (event) => {
+      //     event.target.classList.remove("hover");
+      //   });
+
+      //   //   myButton.addEventListener("mouseout", (event) => {
+      //   //     event.target.classList.toggle("hover");
+      //   //   });
+
+      myButton.addEventListener("click", (event) => {
+        if (event.target.classList.contains("disabled")) {
+          event.target.textContent += "😊";
+        } else {
+          event.target.classList.replace("enabled", "disabled");
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Button</title>
+    <style></style>
+  </head>
+  <body>
+    <h2 id="myh2">well come</h2>
+    <label for="">User name</label>
+    <input type="text" id="mytext" /><br />
+    <input type="submit" name="" id="submit" />
+    <script>
+      document.getElementById("submit").onclick = function () {
+        let username = document.getElementById("mytext").value;
+        const myh2 = document.getElementById("myh2");
+        myh2.innerHTML = username;
+        myh2.style.color = "blue";
+      };
+    </script>
+  </body>
+</html>

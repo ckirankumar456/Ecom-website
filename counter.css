@@ -1,0 +1,21 @@
+#countable {
+  display: block;
+  text-align: center;
+  font-family: verdana;
+  font-size: 8em;
+}
+#btn-container {
+  text-align: center;
+}
+.btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: white;
+  background-color: lightblue;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+.btn:hover {
+  background-color: blue;
+}

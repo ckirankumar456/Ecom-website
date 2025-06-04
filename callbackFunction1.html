@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function fetchData(callback) {
+        console.log("first data");
+        setTimeout(() => {
+          const data = { name: "kiran", age: 23 };
+          callback(data);
+        }, 2000);
+      }
+      function userName(data) {
+        console.log(`User ${data.name} age ${data.age}`);
+      }
+      fetchData(userName);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .btn {
+        font-size: 2rem;
+        margin: 10px;
+        border: none;
+        padding: 10px 15px;
+        background-color: lightblue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1" class="btn">Button 1</button><br />
+    <button id="btn2" class="btn">Button 2</button><br />
+    <button id="btn3" class="btn">Button 3</button><br />
+    <button id="btn4" class="btn">Button 4</button>
+
+    <script>
+      let buttons = document.querySelectorAll(".btn");
+      buttons.forEach((ele) => {
+        ele.style.backgroundColor = "green";
+        ele.textContent += "😊";
+      });
+
+      buttons.forEach((ele) => {
+        ele.addEventListener("click", (event) => {
+          event.target.style.backgroundColor = "red";
+        });
+      });
+
+      buttons.forEach((ele) => {
+        ele.addEventListener("mouseover", (event) => {
+          event.target.style.backgroundColor = "gray";
+        });
+      });
+
+      buttons.forEach((ele) => {
+        ele.addEventListener("mouseout", (event) => {
+          event.target.style.backgroundColor = "yellow";
+        });
+      });
+
+      buttons.forEach((ele) => {
+        ele.addEventListener("click", (event) => {
+          event.target.remove();
+        });
+      });
+    </script>
+  </body>
+</html>
