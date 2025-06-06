@@ -38,10 +38,10 @@ button {
   box-shadow: 5px 5px 10px black;
   cursor: pointer;
 }
-
 .operator-btn {
   background-color: tan;
 }
+/* when move the cursor on a item  */
 button:hover {
   background-color: seashell;
   color: black;
