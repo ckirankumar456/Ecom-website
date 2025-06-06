@@ -41,7 +41,6 @@ button {
 .operator-btn {
   background-color: tan;
 }
-/* when move the cursor on a item  */
 button:hover {
   background-color: seashell;
   color: black;

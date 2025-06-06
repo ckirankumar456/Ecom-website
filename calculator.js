@@ -1,4 +1,3 @@
-// we are getting from html by id
 const display = document.getElementById("display");
 function toDisplay(input) {
   display.value += input;
