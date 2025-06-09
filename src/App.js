@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "../src/EcomWeb.css";
+import NavbarCom from "./Components/NavbarCom";
+import HeaderCom from "./Components/HeaderCom";
+import HeaderCarousel from "./Components/HeaderCarousel";
+import React from "react";
+import ProductDisplay from "./Components/ProductDisplay";
+import PriceDisplay from "./Components/PriceDisplay";
+import FooterCom from "./Components/FooterCom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavbarCom />
+      <HeaderCom />
+      <HeaderCarousel />
+      <ProductDisplay />
+      <PriceDisplay />
+      <FooterCom />
+    </>
   );
 }
 
